@@ -71,11 +71,9 @@
 
   function snapshot() {
     if (localMediaStream) {
-      //ctx.drawImage(video, 0, 0);
+      ctx.drawImage(video, 0, 0);
       // "image/webp" works in Chrome.
       // Other browsers will fall back to image/png.
-      var img = document.createElement("img");
-      img.src = canvas.toDataURL();
       localStorage["camera_photo"] = canvas.toDataURL();
       document.location.href = 'page1-3.html';
       
