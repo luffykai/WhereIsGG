@@ -1,0 +1,48 @@
+#navigation-bar{
+	height: 44px;
+}
+
+.navbar-button{
+	position: absolute;
+	left: 6px;
+	top: 7px;
+}
+
+html{
+	width:320px;
+}
+
+body{
+
+	background-color: #0e8dcd;
+	margin: 0;
+	width: 320px;
+}
+
+#honorable-container{
+	display: inline-block;
+	font-size: 24px;
+	color: white;
+	margin-left: 10px;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+#content{
+	width: 90%;
+	margin: auto;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	color: white;
+	margin-top: 18px;
+	font-size: 20px;
+}
+
+#pay-button{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+#sospeso-opacity{
+	margin: auto;
+	text-align: center;
+	margin-top: 86px;
+}

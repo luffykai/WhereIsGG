@@ -28,7 +28,7 @@ String.prototype.repeat = function(num) {
   
     // Todo list
     $(".todo").on('click', 'li', function() {
-      $(this).toggleClass("todo-done");
+      //$(this).toggleClass("todo-done");
     });
 
     // Custom Selects

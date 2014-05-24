@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<body>
+	<div id="navigation-bar">
+		<div class="navbar-button">
+			<img src="back_btn_320.png">
+		</div>
+		<img src="navbar_with_title.png">
+	</div>
+
+
+	<div id="honorable-container">
+		Honorable, <name>hello</name>
+	</div>
+	<div id="content">
+		You will spend <prize id="prize"> 600 </prize>, to provide
+		10 lunchbox <sospeso id="sospeso">SOSPESO</sospeso>. 
+		<br>
+		<br>
+		Also receive a <secondhand id="secondhand">洗衣機</secondhad>.
+	</div>
+
+
+	<form id="pay-button" action="../page2.html">
+		  <script
+		    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+		    data-key="pk_test_7RDdjibDEyYKHXvgiVzo8Tis"
+		    data-image="/square-image.png"
+		    data-name="書架"
+		    data-description="2 widgets ($20.00), you can provide 10 便當"
+		    data-amount="600">
+		  </script>
+	</form>
+
+	<div id="sospeso-opacity">
+		<img src="take_and_sospeso_opacity.png">
+	</div>
+
+
+</body>
+
+</html>
