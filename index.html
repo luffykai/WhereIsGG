@@ -109,9 +109,13 @@
 	  function testAPI() {
 		console.log('Welcome!  Fetching your information.... ');
 		FB.api('/me', function(response) {
-		  console.log('Successful login for: ' + response.name);
-		  document.getElementById('status').innerHTML =
-			'Thanks for logging in, ' + response.name + '!';
+		  console.log('ZZZ Successful login for: ' + response.name);
+		  var ss = document.getElementById('status');
+		  ss.innerHTML = 'Thanks for logging in, ' + response.name + '!';
+		  var xd = document.createElement("a");
+		  xd.setAttribute('href', 'page1-1.html');
+		  xd.innerHTML = 'Let\'s Go!!!';
+		  ss.appendChild(xd);
 		});
       }
 
