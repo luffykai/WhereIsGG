@@ -18,7 +18,10 @@
     
 <video autoplay></video>
 
-<input type="file" accept="image/*" capture="camera">
+<!--<br>
+<input type="file" accept="image/*" capture="camera" id="photo_field">
+<button onclick="snapshot()">GO</button>
+-->
 
 <canvas style="display:none;"></canvas>
 
@@ -70,7 +73,7 @@
   }, errorCallback);
   });
 
-  function snapshot() {
+  function snapshot() { console.log('snapshot');
     if (localMediaStream) {
       ctx.drawImage(video, 0, 0);
       // "image/webp" works in Chrome.
@@ -89,7 +92,7 @@
 
   video.addEventListener('click', snapshot, false);
 
-  // Not showing vendor prefixes or code that works cross-browser.
+
   
 </script>
     
