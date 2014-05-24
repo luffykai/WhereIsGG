@@ -51,7 +51,7 @@
 		if (response.status === 'connected') {
 		  // Logged into your app and Facebook.
           testAPI();
-          windows.navigate('page2.html');
+          //windows.navigate('page2.html');
 
 		} else if (response.status === 'not_authorized') {
 		  // The person is logged into Facebook, but not your app.
@@ -128,16 +128,16 @@
 	  the JavaScript SDK to present a graphical Login button that triggers
 	  the FB.login() function when clicked.
 	-->
-    <!--
+    
 	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
     </fb:login-button>
-    -->
+    
     <div class="title">
         <img src="sospeso.png" class="img-responsive">
     </div>
 
     <div class="status">
-    <div class="fb-login-button" data-max-rows="1" onlogin="checkLoginState();" data-scope="public_profile, email, publish_actions" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
+    <div class="fb-login-button" data-max-rows="1" data-scope="public_profile, email" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
     </div>
 	<div id="status">
 	</div>
