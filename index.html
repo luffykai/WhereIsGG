@@ -45,7 +45,7 @@
 		if (response.status === 'connected') {
 		  // Logged into your app and Facebook.
           testAPI();
-          windows.navigate('page2.html');
+          //windows.navigate('page2.html');
 
 		} else if (response.status === 'not_authorized') {
 		  // The person is logged into Facebook, but not your app.
@@ -131,7 +131,7 @@
     </div>
 
     <div class="status">
-    <div class="fb-login-button" data-max-rows="1" onlogin="checkLoginState();" data-scope="public_profile, email, publish_actions" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
+    <div class="fb-login-button" data-max-rows="1" onlogin="checkLoginState();" data-scope="public_profile, email" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
     </div>
 	<div id="status">
 	</div>
