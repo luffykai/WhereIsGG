@@ -24,8 +24,8 @@
 <script>
 //<input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
   var video = document.querySelector('video');
-  video.width = window.innerWidth;
-  video.height = window.innerHeight;
+  //video.width = window.innerWidth;
+  //video.height = window.innerHeight;
   var canvas = document.querySelector('canvas');
   var body = document.querySelector('body');
   canvas.width = body.clientWidth;
@@ -71,16 +71,18 @@
 
   function snapshot() {
     if (localMediaStream) {
-      ctx.drawImage(video, 0, 0);
+      //ctx.drawImage(video, 0, 0);
       // "image/webp" works in Chrome.
       // Other browsers will fall back to image/png.
+      var img = document.createElement("img");
+      img.src = canvas.toDataURL();
       localStorage["camera_photo"] = canvas.toDataURL();
       document.location.href = 'page1-3.html';
       
-        /*var c = document.getElementById("content");
+        var c = document.getElementById("content");
         var n = document.createElement("p");
         n.appendChild(document.createTextNode(canvas.toDataURL()));
-        c.appendChild(n);*/
+        c.appendChild(n);
     }
   }
 
