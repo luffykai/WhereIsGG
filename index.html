@@ -118,9 +118,9 @@
 		  console.log('Successful login for: ' + response.name);
 		  document.getElementById('status').innerHTML =
 			'Thanks for logging in, ' + response.name + '!';
-		  document.getElementById('status').appendChild("XD");
-		  ss.innerHTML = "XD";
 		  var ss = document.createElement(ss);
+		  ss.innerHTML = "XD";
+		  document.getElementById('status').appendChild(ss);
 		});
       }
 
