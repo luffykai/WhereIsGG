@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="Flat-UI-master/css/flat-ui.css">
+	<link rel="stylesheet" type="text/css" href="history.css">
+	<script type="text/javascript" src="history.js"></script>
+</head>
+<body>
+
+	<div id="navigation-bar">
+		<div class="navbar-button" onclick="nav_back()">
+			<a href="../page2.html"><img src="back_btn_320.png"><a>
+		</div>
+		<img src="navbar_with_title.png">
+	</div>
+
+	<div id="current-tab">
+		Second-hand Goods Donated
+	</div>
+
+	<div class="todo" id="todo-table">
+            <ul>
+              <li class="">
+                <div class="todo-icon">
+                	<img src="image/provided_img_book.png">
+                </div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    You raised <strong>10</strong>  <strong> Sospeso !</strong>
+                  </h4>
+                  Story books
+                </div>
+              </li>
+              <li>
+                <div class="todo-icon"><img src="image/provided_img_table.png"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Raised <strong>15 Sospeso !</strong>
+                  </h4>
+                  A Baseball Bat Donated 
+                </div>
+              </li>
+              <li>
+                <div class="todo-icon"><img src="image/provided_img_baseball_bat.png"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Raised <strong>5 Sospeso !</strong>
+                  </h4>
+                  A Baseball Bat Donated
+                </div>
+              </li>
+              <li>
+                <div class="todo-icon"><img src="image/provided_img_pc.png"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Raised <strong>20 Sospeso !</strong>
+                  </h4>
+                  A PC Donated
+                </div>
+              </li>
+            </ul>
+          </div>
+
+    <div id="place-holder"></div>
+    <div id="tabbar-container">
+    	<div class="tab" id="donate-bar" onclick="updateTableAndTab()"><img src="image/tab_donation_selected_320.png"></div>
+    	<div class="tab" id="sospeso-bar" onclick="updateTableAndTab()"><img src="image/tab_sospeso_unselected_320.png"></div>
+    </div>
+
+</body>
+</html>

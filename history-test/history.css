@@ -1,0 +1,22 @@
+#current-tab{
+	background-color: #373a3b;
+	text-align: center;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo{
+	margin-bottom: 0px;
+
+}
+
+#place-holder{
+	height: 90px;
+	background-color: #373a3b;
+}
+
+.tab{
+	width: 160px;
+	height: 78px;
+	float: left;
+}
