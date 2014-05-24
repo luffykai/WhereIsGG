@@ -109,11 +109,9 @@
 	  function testAPI() {
 		console.log('Welcome!  Fetching your information.... ');
 		FB.api('/me', function(response) {
-            console.log('Successful login for: ' + response.name);
-            console.log(response);
+		  console.log('Successful login for: ' + response.name);
 		  document.getElementById('status').innerHTML =
-            'Thanks for logging in, ' + response.name + '!';
-          
+			'Thanks for logging in, ' + response.name + '!';
 		});
       }
 
@@ -125,12 +123,15 @@
 	  the FB.login() function when clicked.
 	-->
     
+	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>
+    
     <div class="title">
         <img src="sospeso.png">
     </div>
 
     <div class="status">
-    <div class="fb-login-button" data-max-rows="1" data-scope="public_profile, email, user_likes, publish_actions" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState()"></div>
+    <div class="fb-login-button" data-max-rows="1" data-scope="public_profile, email" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
     </div>
 	<div id="status">
 	</div>
