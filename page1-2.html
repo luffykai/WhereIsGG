@@ -17,7 +17,7 @@
   
     
 <video autoplay></video>
-<img src="">
+
 
 <canvas style="display:none;"></canvas>
 
@@ -74,7 +74,7 @@
       ctx.drawImage(video, 0, 0);
       // "image/webp" works in Chrome.
       // Other browsers will fall back to image/png.
-      document.querySelector('img').src = canvas.toDataURL();
+      //document.querySelector('img').src = canvas.toDataURL();
       
       localStorage["camera_photo"] = canvas.toDataURL();
       document.location.href = 'page1-3.html';
