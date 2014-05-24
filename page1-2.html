@@ -8,8 +8,7 @@
       }
       #live_video{
         top: 0px;
-        width: 200%;
-        height: 200%;
+        
         left: 0px;
       }
     </style>
@@ -25,8 +24,8 @@
 <script>
 //<input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
   var video = document.querySelector('video');
-  //video.width = window.innerWidth;
-  //video.height = window.innerHeight;
+  video.width = window.innerWidth;
+  video.height = window.innerHeight;
   var canvas = document.querySelector('canvas');
   var body = document.querySelector('body');
   canvas.width = body.clientWidth;
@@ -72,7 +71,7 @@
 
   function snapshot() {
     if (localMediaStream) {
-      //ctx.drawImage(video, 0, 0);
+      ctx.drawImage(video, 0, 0);
       // "image/webp" works in Chrome.
       // Other browsers will fall back to image/png.
       localStorage["camera_photo"] = canvas.toDataURL();
