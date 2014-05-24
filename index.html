@@ -117,10 +117,11 @@
 		FB.api('/me', function(response) {
 		  console.log('Successful login for: ' + response.name);
 		  document.getElementById('status').innerHTML =
-			'Thanks for logging in, ' + response.name + '!';
-		  var ss = document.createElement("div");
+			'Thanks for logging in, ' + response.name + '!' ;
+		  var ss = document.createElement("a");
 		  ss.innerHTML = "XD";
-		  document.getElementById('status').insertBefore(ss);
+		  document.getElementById('status').innerHTML =
+			'Thanks for logging in, ' + response.name + '!'  + ss;
 		});
       }
 
