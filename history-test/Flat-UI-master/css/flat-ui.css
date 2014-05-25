@@ -3885,6 +3885,7 @@ input.todo-search-field.placeholder {
   float: left;
   font-size: 24px;
   margin-right: 22px;
+  vertical-align: middle;
 }
 .todo-content {
   padding-top: 1px;
