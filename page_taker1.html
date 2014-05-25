@@ -19,6 +19,25 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
+
+    #navbar{
+      height: 44px;
+      background-image: url("images/navbar_with_title.png");
+    }
+    .navbar_right{
+      position: absolute;
+      right: 6px;
+      top: 4px;
+      height: 36px;
+      width: 36px;
+    }
+    .navbar_right_img{
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
     .todo-search{
 	    margin-top:0px;
 	    margin-bottom:0px;
@@ -28,7 +47,12 @@
       float: left;
       width: 13%;
       margin-right: 6px;
+      margin-top: 4px;
+    }
 
+    .cats-container{
+      height: 50px;
+      background-color: #373a3b;
     }
 	
     </style>
@@ -36,23 +60,15 @@
 
   </head>
   <body>
-  <div class="col-xs-12" style="background:#0e8dcd">
-   <div class="row">
-        <div class="col-xs-12">
-          <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
-                <span class="sr-only">Toggle navigation</span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-01">
-              <ul class="nav navbar-nav navbar-left">           
-                <li><a href="page2.html"><span class="fui-arrow-left"></span></a></li>
-               </ul>
-            </div><!-- /.navbar-collapse -->
-          </nav><!-- /navbar -->
-        </div>
-    <div class="row">
+  <div class="" style="background:#0e8dcd">
+
+    <div id="navbar">
+      <div class="navbar_right">
+        <img class="navbar_right_img" src="images/icons/navbar_magnifier_btn.png">
+      </div>
+    </div>
+
+    <div class="cats-container">
 	<!--TableView starts from here 373A3B-->
 		<div class="cat-wrapper" style="margin-left:22px"><a href="#">
     <img src="images/icons/furniture_unselected.png" border="0" class="img-responsive"></a></div>
