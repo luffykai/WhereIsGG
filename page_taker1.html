@@ -54,7 +54,45 @@
       height: 50px;
       background-color: #373a3b;
     }
+
+    .wrap-image{
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+      margin-left: 24px;
+      margin-right: 14px;
+      float: left;
+    }
 	
+    .exchangeable-img{
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    .center{
+      margin-top: 10px;
+    }
+
+    .content-container{
+      float: left;
+      width: 160px;
+    }
+
+    .detail-btn-wrapper{
+      width: 30px;
+      float: left;
+      margin-top: 22px;
+    }
+
+    .sospeso-number{
+      color: gray;
+    }
+
+    #exchangeable-list{
+      margin-bottom: 0px;
+    }
     </style>
 
 
@@ -63,6 +101,10 @@
   <div class="" style="background:#0e8dcd">
 
     <div id="navbar">
+      <div style="position:absolute; left:6px; top:7px;">
+         <a href="page2.html"><img src="images/back_btn_320.png"></a>
+      </div>
+
       <div class="navbar_right">
         <img class="navbar_right_img" src="images/icons/navbar_magnifier_btn.png">
       </div>
@@ -85,50 +127,97 @@
 		
     </div>
 
-          <div class="todo">
+          <div class="todo" id="exchangeable-list">
             <div class="todo-search row">
             <ul>
               <li> <div class="row">
-                <div style="display:inline-block" class="col-xs-5">
-                  <img src="provide_step_two_content.png" class="img-responsive"></img>
+                <div style="display:inline-block" class="wrap-image">
+                  <img src="images/old_furni.png" class="exchangeable-img"></img>
                 </div>
-                <div class="todo-content col-xs-4">
+                <div class="todo-content content-container center">
                   <h4 class="todo-name">
-                    Names
+                    A Traditional table
                   </h4>
-                  Sospeso: <span class="sospeso number"></span>
+                  <span class="sospeso-number"> Exchange for 10 Sospeso</span>
                 </div>
-                <div class="col-xs-3">
+                <div class="detail-btn-wrapper center">
                   <a href="page_taker_detail.html"><img src="images/tableview-detail-info.png" class="img-responsive"></a>
                 </div>
               </div>
               </li>
               <li> <div class="row">
-                <div style="display:inline-block" class="col-xs-5">
-                  <img src="provide_step_two_content.png" class="img-responsive"></img>
+                <div style="display:inline-block" class="wrap-image">
+                  <img src="images/sibing.png" class="exchangeable-img"></img>
                 </div>
-                <div class="todo-content col-xs-4">
+                <div class="todo-content content-container center">
                   <h4 class="todo-name">
-                    Names
+                    Wedding Cookies
                   </h4>
-                  Sospeso: <span class="sospeso number"></span>
+                  <span class="sospeso-number">Exchange for 2 Sospeso</span>
                 </div>
-                <div class="col-xs-3">
+                <div class="detail-btn-wrapper center">
                   <a href="page_taker_detail.html"><img src="images/tableview-detail-info.png" class="img-responsive"></a>
                 </div>
               </div>
               </li>
               <li> <div class="row">
-                <div style="display:inline-block" class="col-xs-5">
-                  <img src="provide_step_two_content.png" class="img-responsive"></img>
+                <div style="display:inline-block" class="wrap-image">
+                  <img src="images/woawoacar.jpg" class="exchangeable-img"></img>
                 </div>
-                <div class="todo-content col-xs-4">
+                <div class="todo-content content-container center">
                   <h4 class="todo-name">
-                    Names
+                    Baby Car
                   </h4>
-                  Sospeso: <span class="sospeso number"></span>
+                  <span class="sospeso-number">Exchange for 5 Sospeso</span>
                 </div>
-                <div class="col-xs-3">
+                <div class="detail-btn-wrapper center">
+                  <a href="page_taker_detail.html"><img src="images/tableview-detail-info.png" class="img-responsive"></a>
+                </div>
+              </div>
+              </li>
+              <li> <div class="row">
+                <div style="display:inline-block" class="wrap-image">
+                  <img src="images/exaple-image.jpg" class="exchangeable-img"></img>
+                </div>
+                <div class="todo-content content-container center">
+                  <h4 class="todo-name">
+                    Cool Motorcycle
+                  </h4>
+                  <span class="sospeso-number"> Exchange for 50 Sospeso</span>
+                </div>
+                <div class="detail-btn-wrapper center">
+                  <a href="page_taker_detail.html"><img src="images/tableview-detail-info.png" class="img-responsive"></a>
+                </div>
+              </div>
+              </li>
+
+              <li> <div class="row">
+                <div style="display:inline-block" class="wrap-image">
+                  <img src="images/books.jpg" class="exchangeable-img"></img>
+                </div>
+                <div class="todo-content content-container center">
+                  <h4 class="todo-name">
+                    Reference books
+                  </h4>
+                  <span class="sospeso-number"> Exchange for 5 Sospeso</span>
+                </div>
+                <div class="detail-btn-wrapper center">
+                  <a href="page_taker_detail.html"><img src="images/tableview-detail-info.png" class="img-responsive"></a>
+                </div>
+              </div>
+              </li>
+
+              <li> <div class="row">
+                <div style="display:inline-block" class="wrap-image">
+                  <img src="images/mushroom.jpg" class="exchangeable-img"></img>
+                </div>
+                <div class="todo-content content-container center">
+                  <h4 class="todo-name">
+                    Dried Mushrooms
+                  </h4>
+                  <span class="sospeso-number"> Exchange for 5 Sospeso</span>
+                </div>
+                <div class="detail-btn-wrapper center">
                   <a href="page_taker_detail.html"><img src="images/tableview-detail-info.png" class="img-responsive"></a>
                 </div>
               </div>

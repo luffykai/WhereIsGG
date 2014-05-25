@@ -26,9 +26,14 @@
         .status{
             width:auto;
             height:auto;
-            margin-top: 300px;
+            margin-top: 230px;
+            margin-bottom: 30px;
         }
 
+        #logo{
+          max-width: 93%;
+          margin: auto;
+        }
     </style>
 </head>
 <body>
@@ -132,11 +137,11 @@
 	  the FB.login() function when clicked.
 	-->
     
-	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
+	<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>-->
     
     <div class="title">
-        <img src="sospeso.png" class="img-responsive">
+        <img src="sospeso.png" class="img-responsive" id="logo">
     </div>
 
     <div class="status">
