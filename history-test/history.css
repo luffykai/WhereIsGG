@@ -20,3 +20,7 @@
 	height: 78px;
 	float: left;
 }
+
+body {
+	zoom: 300%;
+}
